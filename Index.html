@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>하루 용돈을 정해주는 사이트</title>
+
+    <style>
+
+        body {
+
+            text-align: center;
+
+            font-size: 2rem;
+
+            margin-top: 20%;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p id="message">🔮 마법의 NFC가 말하길... 🔮</p>
+
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+
+
+    <script>
+
+        function showRandomMessage() {
+
+            const messages = [
+
+                "~2000",
+
+                "~5000",
+
+                "~7000",
+
+                "~9000",
+
+                "~10000"
+
+            ];
+
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+
+        }
+
+    </script>
+
+</body>
+
+</html>
